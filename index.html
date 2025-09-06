@@ -11,14 +11,54 @@
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
       margin: 0;
     }
-    .wrap { max-width: 720px; margin: 8vh auto; padding: 0 20px; }
-    .card { padding: 28px; border: 1px solid #e5e7eb; border-radius: 14px; }
-    h1 { font-size: 2rem; margin: 0 0 10px; }
-    p.lead { font-size: 1.1rem; color: #ffffff; }
-    form, .embed { margin-top: 18px; }
-    input[type="email"] { width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 10px; }
-    button { margin-top: 12px; padding: 12px 16px; border: 0; border-radius: 10px; background:#111827; color:#fff; cursor:pointer; }
-    small { display:block; margin-top:12px; color:#6b7280; }
+    .wrap {
+      max-width: 720px;
+      margin: 8vh auto;
+      padding: 0 20px;
+    }
+    .card {
+      padding: 28px;
+      border: 1px solid rgba(255, 255, 255, 0.15); /* Light border for separation */
+      border-radius: 14px;
+      background-color: rgba(255, 255, 255, 0.05); /* Subtle card background for contrast */
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 10px;
+      color: #ffffff;
+    }
+    p.lead {
+      font-size: 1.1rem;
+      color: #e0e7ff; /* Slightly softer white for body text contrast */
+    }
+    .embed {
+      margin-top: 18px;
+    }
+    small {
+      display: block;
+      margin-top: 12px;
+      color: rgba(255, 255, 255, 0.75); /* Softer for footnotes/links */
+    }
+    a {
+      color: #a3c4ff;              /* Light blue link color for visibility */
+      text-decoration: underline;
+    }
+    /* Responsive iframe container */
+    .embed-container {
+      position: relative;
+      width: 100%;
+      max-width: 640px;
+      height: 0;
+      padding-bottom: 125%;       /* Adjust as needed for good aspect ratio */
+    }
+    .embed-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
   </style>
 </head>
 <body>
