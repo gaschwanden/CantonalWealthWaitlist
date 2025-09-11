@@ -1,82 +1,70 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Cantonal Wealth — Join the Waitlist</title>
-  <style>
-    body {
-      background-color: #183964;      /* Deep-blue background */
-      color: #ffffff;                 /* White text */
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      margin: 0;
-    }
-    .wrap {
-      max-width: 720px;
-      margin: 8vh auto;
-      padding: 0 20px;
-    }
-    .card {
-      padding: 28px;
-      border: 1px solid rgba(255, 255, 255, 0.15); /* Light border for separation */
-      border-radius: 14px;
-      background-color: rgba(255, 255, 255, 0.05); /* Subtle card background for contrast */
-    }
-    h1 {
-      font-size: 2rem;
-      margin: 0 0 10px;
-      color: #ffffff;
-    }
-    p.lead {
-      font-size: 1.1rem;
-      color: #e0e7ff; /* Slightly softer white for body text contrast */
-    }
-    .embed {
-      margin-top: 18px;
-    }
-    small {
-      display: block;
-      margin-top: 12px;
-      color: rgba(255, 255, 255, 0.75); /* Softer for footnotes/links */
-    }
-    a {
-      color: #a3c4ff;              /* Light blue link color for visibility */
-      text-decoration: underline;
-    }
-    /* Responsive iframe container */
-    .embed-container {
-      position: relative;
-      width: 100%;
-      max-width: 640px;
-      height: 0;
-      padding-bottom: 125%;       /* Adjust as needed for good aspect ratio */
-    }
-    .embed-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantonal Wealth - Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Public+Sans:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-  <main class="wrap">
-    <div class="card">
-      <h1>Plan your Swiss retirement with confidence</h1>
-      <p class="lead">Join the waitlist for Cantonal Wealth — a Swiss-specific retirement simulator that models AHV, BVG/2<sup>nd</sup> pillar, and 3a with after-tax cashflow.</p>
-      <h1>.</h1>
-      <div class="embed">
-       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdg9L3IoW3CqRsG9TQBj7_0chpNH8Cty2VJDfhWfLEVONXAdg/viewform?embedded=true" 
-         width="640" height="541" frameborder="0" marginheight="0" marginwidth="0">
-         Loading…
-       </iframe>
-      </div>
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo-section">
+            <img src="http://localhost:3845/assets/63cd69127fe21b165da1ebdc77e1fae29b87b063.svg" alt="Cantonal Wealth Logo" class="logo">
+        </div>
 
-      <small>Join your personal retirement journey.</small>
-      <small><a href="/privacy.html">Privacy</a></small>
+        <!-- Title -->
+        <h1 class="title">Cantonal Wealth</h1>
+
+        <!-- Subtitle -->
+        <h2 class="subtitle">Reicht es für die Pensionierung?</h2>
+
+        <!-- Description -->
+        <p class="description">Beginne deine Finanzplanung Heute:</p>
+
+        <!-- Google Sign-in Button -->
+        <a class="google-button" href="http://localhost:3000/api/auth/signin/google?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fwaitlist%2Ffrom-google">
+            <div class="google-icon"></div>
+            <span class="google-text">Continue with Google</span>
+        </a>
+
+        <!-- OR Divider -->
+        <div class="or-section">
+            <p class="or-text">or</p>
+        </div>
+
+        <!-- Email Input -->
+        <div class="email-input-container">
+            <input type="email" class="email-input" placeholder="your@mail.com">
+        </div>
+
+        <!-- Sign Up Button -->
+        <div class="signup-button-container">
+            <button class="signup-button" onclick="handleSignUp()">
+                <span class="signup-text">Sign up</span>
+            </button>
+        </div>
+
+        <!-- Success Message (hidden by default) -->
+        <div class="success-message" id="successMessage">
+            <h2 class="success-title">Ihre finanzielle Zukunft hat begonnen.</h2>
+        </div>
     </div>
-  </main>
+
+    <script>
+        function handleSignUp() {
+            // Hide all interactive elements
+            document.querySelector('.google-button').style.display = 'none';
+            document.querySelector('.or-section').style.display = 'none';
+            document.querySelector('.email-input-container').style.display = 'none';
+            document.querySelector('.signup-button-container').style.display = 'none';
+            
+            // Show success message
+            document.getElementById('successMessage').style.display = 'block';
+        }
+    </script>
 </body>
 </html>

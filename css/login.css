@@ -1,0 +1,330 @@
+/* Cantonal Wealth - Login Page Styles - Pixel Perfect Match */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    background-color: #051933;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #051933;
+    max-width: 398px;
+    margin: 0 auto;
+}
+
+.logo-section {
+    position: absolute;
+    top: 113px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 136.41px;
+    height: 146.54px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.title {
+    position: absolute;
+    top: 266px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    color: white;
+    text-align: center;
+    letter-spacing: -0.96px;
+    width: 393px;
+}
+
+.subtitle {
+    position: absolute;
+    top: 376.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: white;
+    text-align: center;
+    width: 306px;
+}
+
+.description {
+    position: absolute;
+    top: 526.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.5px;
+    width: 306px;
+}
+
+.google-button {
+    position: absolute;
+    top: 556px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 242px;
+    height: 26px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.google-button:hover {
+    background-color: #333;
+}
+
+.google-icon {
+    position: absolute;
+    left: 23px;
+    width: 19px;
+    height: 19px;
+    background-image: url('http://localhost:3845/assets/ab97db64cda984fc916ff79321f20fd27fc5dea7.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.google-text {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.3;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.or-section {
+    position: absolute;
+    top: 592px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 242px;
+    height: 26px;
+}
+
+.or-text {
+    position: absolute;
+    top: 605px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.5px;
+    width: 66px;
+}
+
+.divider-left {
+    position: absolute;
+    top: 606px;
+    left: 0px;
+    width: 102px;
+    height: 1px;
+    background-image: url('http://localhost:3845/assets/53fac2cf5273f5791aa0c2ff863f58fe85d99cb6.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.divider-right {
+    position: absolute;
+    top: 606px;
+    right: 0px;
+    width: 102px;
+    height: 1px;
+    background-image: url('http://localhost:3845/assets/53fac2cf5273f5791aa0c2ff863f58fe85d99cb6.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.email-input-container {
+    position: absolute;
+    top: 628px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 242px;
+    height: 26px;
+}
+
+.email-input {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 0 10px;
+    color: #9c9c9c;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.3;
+    transition: border-color 0.3s ease;
+}
+
+.email-input:focus {
+    outline: none;
+    border-color: #ffb200;
+}
+
+.email-input::placeholder {
+    color: #9c9c9c;
+}
+
+.signup-button-container {
+    position: absolute;
+    top: 661px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 242px;
+    height: 26px;
+}
+
+.signup-button {
+    width: 100%;
+    height: 100%;
+    background-color: #ffb200;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #e6a000;
+}
+
+.signup-text {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.3;
+    color: white;
+    text-align: center;
+}
+
+.email-label {
+    position: absolute;
+    top: 673.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.3;
+    color: black;
+    text-align: center;
+    width: 85px;
+}
+
+.email-label-bg {
+    position: absolute;
+    top: 661px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 172px;
+    height: 26px;
+    background-color: #d9d9d9;
+    border-radius: 3px;
+}
+
+.success-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+
+.success-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    color: white;
+    text-align: center;
+    letter-spacing: -0.72px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .title {
+        font-size: 36px;
+        width: 300px;
+    }
+    
+    .subtitle {
+        font-size: 28px;
+        width: 250px;
+    }
+    
+    .google-button,
+    .email-input-container,
+    .signup-button-container {
+        width: calc(100% - 40px);
+    }
+    
+    .or-section {
+        width: calc(100% - 40px);
+    }
+    
+    .divider-left,
+    .divider-right {
+        width: calc(50% - 20px);
+    }
+    
+    .email-label-bg {
+        left: 20px;
+        width: calc(100% - 40px);
+    }
+    
+    .email-label {
+        left: 50%;
+    }
+    
+    .success-title {
+        font-size: 28px;
+        max-width: 300px;
+    }
+}
